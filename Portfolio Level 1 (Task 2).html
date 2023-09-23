@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home"> Home </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+    </header>
+    <section id="home">
+     <div class="content">
+        <h2>Ifrah Javaid</h2>
+        <p>I am a versatile web developer intern with a passion for research analysis and a flair for logo design. With a keen eye for detail and a strong commitment to delivering exceptional web solutions, I combines my technical skills with creative design sensibilities to craft engaging online experiences. With experience in both the worlds of web development and graphic design, I brings a unique blend of expertise to my portfolio, showcasing my ability to create innovative websites, conduct in-depth research, and design captivating logos. Explore my portfolio to witness my journey of transforming ideas into visually stunning and functional digital assets.</p>
+        <a href="#" class="btn">Contact Me</a>
+     </div>
+     <img src="hijab3-removebg-preview.png" alt="me">
+    </section>
+
+    <section id="services">
+        <div class="secText">
+            <h2>What I Am Great At</h2>
+            <p>Transforming Visions into Reality! <br>Elevate your brand with my expertise in web development, research analysis, and logo design, creating captivating digital experiences that leave a lasting impression.</p>
+        </div>
+
+        <div class="content">
+            <div class="servicesBx">
+                <img src="writer.png" alt="">
+                <h3>Content Writing</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="web design icon.png" alt="">
+                <h3>Web Development</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="logo design.png" alt="">
+                <h3>Logo Design</h3>
+            </div>
+
+          <div class="servicesBx">
+                <img src="research-analysis.png" alt="">
+                <h3>Research Analyst</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+          
+    </section>
+    
+    <section id="portfolio">
+        <div class="secText">
+            <h2>My Masterpiece Collection</h2>
+            <p>Capturing Life's Beauty Through My Lens! <br> A Masterpiece Collection of Pictures That Speak Volumes - Where I share my Emotion.</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="mp 1.jpeg" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="collection 2.jpg" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="mp 2.jpeg" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="collection 4.jpg" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="mp 3.jpeg" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="collection 6.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="secText">
+            <h2>Ways To Contact Me</h2>
+            <p>Feel free to reach out for collaborations, inquiries. <br> Let's bring your ideas to life! </p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-outline"></ion-icon> ifrahjavaid06@gmail.com
+            </a>
+
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon> +92 3430290696
+            </a>
+
+            <a href="#">
+                <ion-icon name="logo-skype"></ion-icon> Ifrah Javaid
+            </a>
+
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon> _ifrahjavaid_
+            </a>
+        </div>
+        <div class="center">
+            <p class="copyrights">Copyright © 2023
+                <a href="#">Ifrah Javaid</a>. All Right Reserved.
+            </p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let list = document.querySelectorAll('.nav li')
+        function active(){
+            list.forEach((i)=> i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i)=> i.addEventListener('click',active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
